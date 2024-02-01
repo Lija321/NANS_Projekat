@@ -1,0 +1,271 @@
+Korisni podaci:
+    ~ header - daje konacan rezultat utakmice sto nam je i predvidjanje
+    ~ comparison - daje podatke kako je tim igrao
+    ~ teams - govori prosek te sezone ~~ mozda ovo za koristiti?
+
+Iz predloga projekta:
+- test/train/val 60/20/20
+- metrka r^2
+
+
+Asistent predlozi:
+-Proverite da li ima outlier-a, # 
+-razmislite kako cete resavati nedostajuce vrednosti. # Posto imam prosek za 3P% itd. uzecu prosek
+-Pored visestruke linearne regresije probajte i 
+-random forest model pa vidite odgovarajucom metrikom koji je model bolji.  
+-Kod regresije proverite pretpostavke. 
+
+
+game_id                        E2007_013 
+game                             LJU-OLY
+round                                  2
+phase                     REGULAR SEASON
+season_code                        E2007
+team_id_a                            LJU
+team_id_b                            OLY
+fast_break_points_a                    0 
+fast_break_points_b                    0
+turnover_points_a                      0 
+turnover_points_b                      0
+second_chance_points_a                 0
+second_chance_points_b                 0
+defensive_rebounds_a                  14
+offensive_rebounds_b                   6
+offensive_rebounds_a                  12
+defensive_rebounds_b                  13
+turnovers_starters_a                   5
+turnovers_bench_a                      7
+turnovers_starters_b                   6
+turnovers_bench_b                     15
+steals_starters_a                      7
+steals_bench_a                         3
+steals_starters_b                      3
+steals_bench_b                         0
+assists_starters_a                     8
+assists_bench_a                        6
+assists_starters_b                     3
+assists_bench_b                        3
+points_starters_a                     58
+points_bench_a                        29
+points_starters_b                     47
+points_bench_b                        31
+max_a                                  6
+minute_prev_a                         10
+prev_a                             14-21
+minute_str_a                          12
+str_a                              20-21
+max_b                                  6
+minute_prev_b                          4
+prev_b                               8-8
+minute_str_b                           6
+str_b                               8-14
+max_lead_a                            14
+max_lead_b                             7
+minute_max_lead_a                     39
+minute_max_lead_b                     10
+points_max_lead_a                  83-69
+points_max_lead_b                  14-21
+
+E2007_2_LJU_OLY
+season                    2016
+team                       EFS
+PTS40                     84.0
+OP_PTS40                  85.0
+PTS                         84
+OP_PTS                      85
+3P%                  34.782609
+OP_3P%               31.578947
+2P%                       50.0
+OP_2P%                    65.0
+FT%                  84.210526
+3PR                  34.328358
+OP_3PR                32.20339
+FTR                  28.358209
+OP_FTR               38.983051
+OREB%                33.333333
+DREB%                     50.0
+ASTR                      50.0
+OP_ASTR                   50.0
+TOVR                  14.81681
+OP_TOVR              26.939655
+PFR                  33.674569
+PFDR                 28.286638
+AST-TOV_R             1.363636
+OP_AST-TOV_R               0.8
+STLR                 12.122845
+OP_STLR               4.040948
+BLKR                       2.5
+OP_BLKR               4.545455
+PACE                     74.24
+ORtg                113.146552
+DRtg                114.493534
+NETRtg               -1.346983
+eFG%                 50.746269
+OP_eFG%              59.322034
+TS%                  55.732484
+OP_TS%               61.487269
+game_id         2016_1_BAS_EFS
+round                        1
+location             away_team
+OP_team                    BAS
+win                      False
+
+team
+3 letter team code
+
+PTS40
+Points scored per 40 minutes
+
+OP_PTS40
+Points conceded per 40 minutes
+
+PTS
+Points scored
+
+OP_PTS
+Points conceded
+
+3P%
+3 points scoring percentage
+
+OP_3P%
+opponents 3 points scoring percentage
+
+2P%
+2 points scoring percentage
+
+OP_2P%
+opponents 2 points scoring percentage
+
+FT%
+Free throws scoring percentage
+
+3PR
+3-point rate (% of field goal attempts that were 3-pointers)
+
+OP_3PR
+Opponents 3-point rate (% of field goal attempts that were 3-pointers)
+
+FTR
+Free throw rate (free throws per 100 field goal attempts)
+
+OP_FTR
+Opponents free throw rate (free throws per 100 field goal attempts)
+
+OREB%
+Offensive rebounds % (percent of rebounds grabbed under opponents basket)
+
+DREB%
+Defensive rebounds %(percent of rebounds grabbed under own team's basket)
+
+ASTR
+Assist rate (assists per 100 field goals made)
+
+OP_ASTR
+Opponent assist rate (assists per 100 field goals made)
+
+TOVR
+Turnover rate (turnovers per 100 possessions)
+
+OP_TOVR
+Opponent turnover rate (turnovers per 100 possessions)
+
+PFR
+Fouls committed per 100 possessions
+
+PFDR
+Fouls drawn per 100 possessions
+
+AST-TOV_R
+Assist-Turnover ratio (assists per turnover)
+
+OP_AST-TOV_R
+Opponents Assist-Turnover ratio (assists per turnover)
+
+STLR
+Steals rate (steals per 100 opponents possessions)
+
+OP_STLR
+Opponents steals rate (opponent steals per 100 team possessions)
+
+BLKR
+Blocks rate (blocks per 100 opponents 2-point attempts)
+
+OP_BLKR
+Opponent Blocks rate (blocks against per 100 team 2-point attempts)
+
+PACE
+Estimated Possessions per 40 minutes
+
+ORtg
+Offensive rating (point per 100 possessions)
+
+DRtg
+Defensive rating (points conceded per 100 possessions)
+
+NETRtg
+Net rating (Points differential per 100 possessions)
+
+eFG%
+Effective field goal percentage
+
+OP_eFG%
+Opponents effective field goal percentage
+
+TS%
+True shooting percentage
+
+OP_TS%
+Opponents True shooting percentage
+
+game_id
+id in the form of {season}{round){home team}_{away team}
+
+round
+round number in season
+
+location
+home or away team
+
+OP_team
+Opposing team
+
+win
+True if game won, False is lost
+
+
+===========================
+    "game_id",
+    "team_id",
+    "fast_break_points_for",
+    "fast_break_points_against",
+    "turnover_points_for",
+    "turnover_points_against",
+    "second_chance_points_for",
+    "second_chance_points_against",
+    "defensive_rebounds_for",
+    "defensive_rebounds_against",
+    "offensive_rebounds_for",
+    "offensive_rebounds_against",
+    "turnovers_for",
+    "turnovers_against",
+    "steals_for",
+    "steals_against",
+    "assists_for",
+    "assists_against"
+    "3P%_for",
+    "3P%_against",
+    "2P%_for",
+    "2P%_against",
+    "FT%_for",
+    "PFR_for",
+    "PFD_against"
+===========================
+
+df_comaprison['3P%_a'] = float('nan')
+df_comaprison['3P%_against'] = float('nan')
+df_comaprison['2P%_for'] = float('nan')
+df_comaprison['2P%_against'] = float('nan')
+df_comaprison['FT%_for'] = float('nan')
+df_comaprison['PFR_for'] = float('nan')
+df_comaprison['PFD_against'] = float('nan')
