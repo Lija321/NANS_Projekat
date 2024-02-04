@@ -235,6 +235,20 @@ def get_rmse(model, features, labels):
     rmse = np.sqrt(np.mean(((labels - y_pred) ** 2)))
     return rmse
 
+def get_mse(model, features, labels):
+    '''Returns MSE score.'''
+    y_pred = model.predict(sm.add_constant(features, has_constant='add'))
+    
+    labels.columns = range(labels.shape[1])
+    dif = labels - y_pred
+
+    n=len(labels)
+    mse=0.0
+    for l,y in zip(labels,y_pred):
+        mse += (l-y)**2 
+
+    mse = mse/n
+    return mse
 
 def get_rsquared(model, features, labels):
     '''Returns r^2 score.'''
